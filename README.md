@@ -10,7 +10,7 @@ I am using:
 - [Ruby on Rails 5.2.1](https://rubyonrails.org/)
 - [Ubuntu 18.04](http://releases.ubuntu.com/18.04/) x64-bit
 
-## Running sample code
+## Running Ruby code
 
 ### Run Ruby script file
 
