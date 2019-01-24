@@ -2,18 +2,20 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](/LICENSE)
 
-Learning Ruby language (Revisited).
+Learning Ruby language and its framework (Revisited).
 
 I am using:
 
 - [Ruby 2.5.1](https://www.ruby-lang.org/end/)
 - [Ruby on Rails 5.2.1](https://rubyonrails.org/)
-- Ubuntu 18.04 x64-bit
+- [Ubuntu 18.04](http://releases.ubuntu.com/18.04/) x64-bit
 
 
 ## Reference
 
-- [Ruby Official Website](https://www.ruby-lang.org/end/)
+- [Official Ruby Docs](https://www.ruby-lang.org/en/documentation/)
+- [__Quick Start__: Ruby in 20 minutes](https://www.ruby-lang.org/en/documentation/quickstart/)
+- [Ruby on Rails Guides](https://guides.rubyonrails.org/)
 - [How to install Ruby on Ubuntu 18.04](https://linuxize.com/post/how-to-install-ruby-on-ubuntu-18-04/)
 
 
