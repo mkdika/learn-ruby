@@ -15,7 +15,7 @@ I am using:
 ### Run Ruby script file
 
 ```console
-ruby <ruby-script-file-name>
+ruby <path-to-your-rb-file>
 # example: ruby 01-helloworld.rb
 ```
 
