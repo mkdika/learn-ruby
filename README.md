@@ -33,6 +33,8 @@ irb
 - [Official Ruby Docs](https://www.ruby-lang.org/en/documentation/)
 - [__Quick Start__: Ruby in 20 minutes](https://www.ruby-lang.org/en/documentation/quickstart/)
 - [Learn Ruby the Hardway](https://learnrubythehardway.org/book/)
+- [A crash course in Ruby](https://scotch.io/tutorials/a-crash-course-in-ruby)
+- [Idiomatic Ruby: writing beautiful code](https://medium.com/the-renaissance-developer/idiomatic-ruby-1b5fa1445098)
 - [6 Ruby Best Practices Beginners Should Know](https://www.codementor.io/ruby-on-rails/tutorial/6-ruby-best-practices-beginners-should-know)
 - [Ruby on Rails Guides](https://guides.rubyonrails.org/)
 - [The Ruby on Rails Tutorial](https://www.railstutorial.org/book)
@@ -41,5 +43,5 @@ irb
 
 ## Copyright and License
 
-Copyright 2018-2019 Maikel Chandika (mkdika@gmail.com). Code released under the 
+Copyright 2018-2019 Maikel Chandika (mkdika@gmail.com). Code released under the
 MIT License. See [LICENSE](/LICENSE) file.
