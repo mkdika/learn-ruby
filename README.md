@@ -41,6 +41,8 @@ irb
 ### Rails
   - [Ruby on Rails Guides](https://guides.rubyonrails.org/)
   - [The Ruby on Rails Tutorial](https://www.railstutorial.org/book)
+
+### Others
   - [How to install Ruby on Ubuntu 18.04](https://linuxize.com/post/how-to-install-ruby-on-ubuntu-18-04/)
 
 
