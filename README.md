@@ -27,6 +27,13 @@ Running ruby built in interactive console, in terminal run:
 irb
 ```
 
+### Run Rails server
+
+From rails project root folder, run:
+
+```console
+rails server
+```
 
 ## Reference & Tutorial
 
