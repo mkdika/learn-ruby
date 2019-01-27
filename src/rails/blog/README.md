@@ -1,4 +1,4 @@
-# Rails Blog Hello World Project
+# Rails Blog Project
 
 This is from official
 [Ruby on Rails Getting Started project](https://guides.rubyonrails.org/getting_started.html),
@@ -94,7 +94,5 @@ _Coming soon.._
 - [Active Record Querying](https://guides.rubyonrails.org/active_record_querying.html)
 - [Active Record Validations](https://guides.rubyonrails.org/active_record_validations.html)
 - [Layouts and Rendering in Rails](https://guides.rubyonrails.org/layouts_and_rendering.html)
-
-
-
+- [Securing Rails Applications](https://guides.rubyonrails.org/security.html)
 
