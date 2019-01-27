@@ -47,13 +47,48 @@ rails server
 rails generate controller <controller-name> <action-name>
 # rails generate controller Welcome index
 ```
+Will create a controller class name `Welcome` with predefine action method
+`index` and `index.html.erb` file.
 
-#### Database creation
 
-#### Database initialization
+#### View all defined routes
+
+```console
+rails route
+```
+
+
+#### Creating the model
+
+```console
+rails generate model <model-name> <*field-name-and-type>
+# rails generate model Article title:string text:text
+```
+
+
+#### Migrating Database
+
+```console
+rails db:migrate
+```
+
+If the new migration script is available, then it will start the migration
+process.
+
 
 #### How to run the test suite
 
-#### Services (job queues, cache servers, search engines, etc.)
+_Coming soon.._
 
 #### Deployment instructions
+
+_Coming soon.._
+
+
+## Reference
+
+- [Rails Routing](https://guides.rubyonrails.org/routing.html)
+- [Active Record Migrations](https://guides.rubyonrails.org/active_record_migrations.html)
+- [Rails Active record data types](https://michaelsoolee.com/rails-activerecord-data-types/)
+- [Active Record Querying](https://guides.rubyonrails.org/active_record_querying.html)
+
