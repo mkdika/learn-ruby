@@ -96,3 +96,5 @@ _Coming soon.._
 - [Layouts and Rendering in Rails](https://guides.rubyonrails.org/layouts_and_rendering.html)
 - [Securing Rails Applications](https://guides.rubyonrails.org/security.html)
 
+- __Other:__
+  - [11 great gem for every occasion](https://infinum.co/the-capsized-eight/a-gem-for-every-occasion-11-great-ruby-libraries-we-use-on-every-project)
