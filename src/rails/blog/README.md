@@ -1,20 +1,23 @@
 # Rails Blog Hello World Project
 
+This is from official
+[Ruby on Rails Getting Started project](https://guides.rubyonrails.org/getting_started.html),
+which I follow and write it step by step in learning.
 
 ## Requirement
 
-* Ruby version
+#### Ruby version
 
   - Ruby 2.5.1
   - Rails 5.2.2
 
-* System dependencies
+#### System dependencies
 
-_Coming soon.._
+  _Coming soon.._
 
-* Configuration
+#### Configuration
 
-_Coming soon.._
+  _Coming soon.._
 
 
 ## Rails Commands
