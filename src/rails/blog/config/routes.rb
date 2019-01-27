@@ -4,7 +4,9 @@ Rails.application.routes.draw do
 
   # automaticly create CRUD endpoint
   # run: rails routes , for details info.
-  resources :articles
+  resources :articles do
+    resources :comments
+  end
 
   root 'welcome#index'
 end

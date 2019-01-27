@@ -90,6 +90,7 @@ _Coming soon.._
 - [Rails Routing](https://guides.rubyonrails.org/routing.html)
 - [Active Record Migrations](https://guides.rubyonrails.org/active_record_migrations.html)
 - [Rails Active record data types](https://michaelsoolee.com/rails-activerecord-data-types/)
+- [Active Record Associations](https://guides.rubyonrails.org/association_basics.html)
 - [Active Record Querying](https://guides.rubyonrails.org/active_record_querying.html)
 - [Active Record Validations](https://guides.rubyonrails.org/active_record_validations.html)
 - [Layouts and Rendering in Rails](https://guides.rubyonrails.org/layouts_and_rendering.html)
