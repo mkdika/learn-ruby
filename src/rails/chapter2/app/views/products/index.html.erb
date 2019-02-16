@@ -1,0 +1,16 @@
+<h2><%= @title %></h2>
+
+<table border="1">
+  <tr>
+    <td>Nama</td>
+    <td>Harga</td>
+    <td>Deskripsi</td>
+  </tr>
+  <% @products.each do |product| %>
+    <tr>
+      <td><%= product.name %></td>
+      <td><%= product.price %></td>
+      <td><%= product.description %></td>
+    </tr>
+  <% end %>
+</table>
