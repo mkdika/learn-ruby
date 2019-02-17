@@ -1,0 +1,39 @@
+<%= form_for @book do |f| %>
+  <div>
+    <%= f.label :title %>
+    </br>
+    <%= f.text_field :title %>
+    <% if @book.errors[:title] %>
+      <%= @book.errors[:title].join(', ') %>
+    <% end %>
+  </div>
+  <div>
+    <%= f.label :page %>
+    </br>
+    <%= f.text_field :page %>
+    <% if @book.errors[:page] %>
+      <%= @book.errors[:page].join(', ') %>
+    <% end %>
+  </div>
+  <div>
+    <%= f.label :year %>
+    </br>
+    <%= f.text_field :year %>
+    <% if @book.errors[:year] %>
+      <%= @book.errors[:year].join(', ') %>
+    <% end %>
+  </div>
+  <div>
+    <%= f.label :description %>
+    </br>
+    <%= f.text_area :description %>
+    <% if @book.errors[:description] %>
+      <%= @book.errors[:description].join(', ') %>
+    <% end %>
+  </div>
+  <div>
+    <%= f.submit button_text %>
+  </div>
+<% end %>
+
+<%= link_to '<< Kembali ke daftar buku', books_path %>

@@ -1,0 +1,22 @@
+<div>
+  <b><%= @book.title %></b>
+</div>
+<div>
+  Jumlah halaman : <%= @book.page %>
+</div>
+<div>
+  Tahun terbit : <%= @book.year %>
+</div>
+<div>
+  Deskripsi : <%= @book.description %>
+</div>
+<div>
+  <%= link_to 'Edit buku', edit_book_path(@book) %>
+</div>
+<div>
+  <%= link_to 'Hapus buku', book_path(@book), method: :delete, data: {confirm: "Buku '#{@book.title}' akan dihapus?"} %>
+</div>
+<div>
+  <%= link_to "<< Kembali ke daftar buku", books_path %>
+</div>
+
