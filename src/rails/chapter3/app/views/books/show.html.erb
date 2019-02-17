@@ -10,12 +10,14 @@
 <div>
   Deskripsi : <%= @book.description %>
 </div>
+<br/>
 <div>
-  <%= link_to 'Edit buku', edit_book_path(@book) %>
+  <%= link_to '>> Edit buku', edit_book_path(@book) %>
 </div>
 <div>
-  <%= link_to 'Hapus buku', book_path(@book), method: :delete, data: {confirm: "Buku '#{@book.title}' akan dihapus?"} %>
+  <%= link_to '>> Hapus buku', book_path(@book), method: :delete, data: {confirm: "Buku '#{@book.title}' akan dihapus?"} %>
 </div>
+<br/>
 <div>
   <%= link_to "<< Kembali ke daftar buku", books_path %>
 </div>
