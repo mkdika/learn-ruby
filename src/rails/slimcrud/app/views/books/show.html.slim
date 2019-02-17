@@ -1,0 +1,20 @@
+div
+  b
+    = @book.title
+div
+  data-content="Jumlah Halaman : "
+  = @book.page
+div
+  data-content="Tahun Terbit : "
+  = @book.year
+div
+  data-content="Deskripsi : "
+  = @book.description
+br
+div
+  = link_to ">> Edit Buku", edit_book_path(@book)
+div
+  = link_to ">> Hapus Buku", book_path(@book), method: :delete, data: {confirm: "Buku '#{@book.title}' akan dihapus?"}
+br
+div
+  = link_to "<< Kembali ke Daftar Buku", books_path

@@ -37,9 +37,9 @@ class BooksController < ApplicationController
   # update exisiting data from edit page
   def update
     @book = current_book
-    book = book_params
+
     if @book.update book_params
-      redirect_to books_path, notic: "Berhasil memperbaruhi data buku #{@book.title}"
+      redirect_to books_path, notice: "Berhasil memperbaruhi data buku #{@book.title}"
     else
       render 'edit'
     end

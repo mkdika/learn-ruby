@@ -1,0 +1,26 @@
+h1 Daftar Buku
+
+= link_to ">> Tambah buku baru", new_book_path
+br
+br
+table border="1"
+  tr
+    td id
+    td Judul
+    td Halaman
+    td Opsi
+  - @books.each do |book|
+    tr
+      td 
+        = book.id
+      td 
+        = book.title
+      td 
+        = book.page
+      td 
+        = link_to "Detail", book_path(book) 
+        data-content=" | "
+        = link_to "Edit", edit_book_path(book) 
+        data-content=" | "
+        = link_to "Delete", book_path(book), method: :delete, data: {confirm: "Buku '#{book.title}' akan dihapus?"}
+
