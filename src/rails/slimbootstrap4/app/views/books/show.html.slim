@@ -1,0 +1,28 @@
+.jumbotron
+  h1.display-4 Detil Data Buku
+  hr.my-4
+  p Melihat detail data buku yang telah ada.
+
+.container
+  div
+    h3
+      = @book.title
+  div
+    data-content.text-muted="Jumlah Halaman : "
+    = @book.page
+  div
+    data-content.text-muted="Tahun Terbit : "
+    = @book.year
+  div
+    data-content.text-muted="Deskripsi : "
+    br
+      = @book.description
+  br
+  div
+    = link_to "Edit Buku", edit_book_path(@book), class: "btn btn-info"
+    data-content=" "
+    = link_to "Hapus Buku", book_path(@book), method: :delete, data: {confirm: "Buku '#{@book.title}' akan dihapus?"}, class: "btn btn-warning"
+  br
+  div
+    = link_to "<< Kembali ke Daftar Buku", books_path, class: "btn btn-primary"
+
