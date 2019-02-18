@@ -1,0 +1,36 @@
+h1.display-4 Tech Book Worm
+
+.container
+  - if flash[:notice]
+    .notice.alert.alert-info
+      = flash[:notice]
+  div
+    = link_to "Tambah Buku Baru", new_book_path, class: "btn btn-primary"
+  br
+  table.table.table-striped
+    thead
+      tr
+        th #
+        th Judul
+        th Halaman
+        th
+    tbody
+      - @books.each do |book|
+        tr
+          th scope="row"
+            = book.id
+          td 
+            = book.title
+          td 
+            = book.page
+          td.text-right
+            = link_to "Detail", book_path(book), class: "btn btn-success btn-sm"
+            data-content=" "
+            = link_to "Edit", edit_book_path(book), class: "btn btn-info btn-sm"
+            data-content=" "
+            = link_to "Delete", book_path(book), method: :delete, data: {confirm: "Buku '#{book.title}' akan dihapus?"}, class: "btn btn-warning btn-sm"
+  
+  div
+    data-content="Total data: "
+    = @books.size
+
