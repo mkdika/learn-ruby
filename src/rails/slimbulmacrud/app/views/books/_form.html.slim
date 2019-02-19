@@ -1,0 +1,37 @@
+= form_for @book do |f|
+  .section
+    .container.is-fluid
+      = link_to "Kembali ke Daftar Buku", books_path, class: "button is-info is-rounded"
+      br
+      br
+      .field
+        = f.label "Judul Buku", class: "label"
+        .control
+          = f.text_field :title, class: "input", placeholder: "Input judul"
+          - if @book.errors[:title]
+            p.help.is-danger
+              = @book.errors[:title].join(', ')
+      .field
+        = f.label "Total Halaman", class: "label"
+        .control
+          = f.text_field :page, class: "input", placeholder: "Input total halaman"
+          - if @book.errors[:page]
+            p.help.is-danger
+              = @book.errors[:page].join(', ')
+      .field
+        = f.label "Tahun", class: "label"
+        .control
+          = f.text_field :year, class: "input", placeholder: "Input tahun"
+          - if @book.errors[:year]
+            p.help.is-danger
+              = @book.errors[:year].join(', ')
+      .field
+        = f.label "Deskripsi", class: "label"
+        .control
+          = f.text_area :description, class: "textarea", placeholder: "Input deskripsi"
+          - if @book.errors[:description]
+            p.help.is-danger
+              = @book.errors[:description].join(', ')
+      div
+        = f.submit button_text, class: "button is-primary is-rounded"
+

@@ -1,2 +1,9 @@
-h1 Books#new
-p Find me in app/views/books/new.html.slim
+section.hero.is-primary.is-small
+  .hero-body
+    .container
+      h1.title Tambah Buku Baru
+      hr
+      h3.subtitle Menambah data buku baru.
+
+= render partial: "form", locals: {button_text: "Simpan Penambahan"}
+

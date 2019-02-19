@@ -1,7 +1,7 @@
 doctype html
 html
-  headd
-    title Slim CRUD
+  head
+    title Slim Bulma
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
@@ -10,15 +10,7 @@ html
   body
     = yield
     br
-    br
-
-    title Slim CRUD
-    = csrf_meta_tags
-    = csp_meta_tag
-    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-
-  body
-    = yield
-    br
-    br
+    footer.footer
+      .content.has-text-centered
+        | Rails Slim Bulma CRUD is by Maikel Chandika <mkdika@gmail.com>. 
+        | The source code is licensed under MIT.

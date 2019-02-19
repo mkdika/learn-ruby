@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+@import "bulma";
+
+.field_with_errors {
+  display: inline;
+}

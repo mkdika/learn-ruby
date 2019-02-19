@@ -1,2 +1,9 @@
-h1 Books#edit
-p Find me in app/views/books/edit.html.slim
+section.hero.is-primary.is-small
+  .hero-body
+    .container
+      h1.title Ubah Data Buku
+      hr
+      h3. Merubah data buku yang ada.
+
+= render partial: "form", locals: {button_text: "Simpan Perubahan"}
+

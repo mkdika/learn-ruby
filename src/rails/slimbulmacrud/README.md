@@ -22,3 +22,8 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## Reference
+
+- [Rails Bulma](https://github.com/joshuajansen/bulma-rails)
+- [Bulma Docs](https://bulma.io/documentation)

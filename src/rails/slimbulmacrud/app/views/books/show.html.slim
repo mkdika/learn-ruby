@@ -1,2 +1,31 @@
-h1 Books#show
-p Find me in app/views/books/show.html.slim
+section.hero.is-primary.is-small
+  .hero-body
+    .container
+      h1.title Detail Data Buku
+      hr
+      p Melihat ringkasan data buku yang telah ada.
+
+.section
+  .container.is-fluid
+    .content
+      h2.is-medium
+          = @book.title
+      div
+        data-content.has-text-grey="Jumlah Halaman : "
+        = @book.page
+      div
+        data-content.has-text-grey="Tahun Terbit : "
+        = @book.year
+      div
+        data-content.has-text-grey="Deskripsi : "
+        br
+          = @book.description
+      br
+      div
+        = link_to "Edit Buku", edit_book_path(@book), class: "button is-primary is-rounded"
+        data-content=" "
+        = link_to "Hapus Buku", book_path(@book), method: :delete, data: {confirm: "Buku '#{@book.title}' akan dihapus?"}, class: "button is-warning is-rounded"
+      br
+      div
+        = link_to "Kembali ke Daftar Buku", books_path, class: "button is-info is-rounded"
+

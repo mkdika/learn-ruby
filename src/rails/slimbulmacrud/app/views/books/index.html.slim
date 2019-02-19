@@ -1,36 +1,42 @@
-h1.display-4 Tech Book Worm
+section.hero.is-primary.is-small
+  .hero-body
+    .container
+      h1.title Toko Buku Pakar IT
+      hr
+      h3.subtitle Daftar buku programming bermutu untuk dipinjam.
 
-.container
-  - if flash[:notice]
-    .notice.alert.alert-info
-      = flash[:notice]
-  div
-    = link_to "Tambah Buku Baru", new_book_path, class: "btn btn-primary"
-  br
-  table.table.table-striped
-    thead
-      tr
-        th #
-        th Judul
-        th Halaman
-        th
-    tbody
-      - @books.each do |book|
+.section
+  .container.is-fluid
+    - if flash[:notice]
+      .notification.is-warning
+        = flash[:notice]
+    div
+      = link_to "Tambah Buku Baru", new_book_path, class: "button is-info is-rounded"
+    br
+    table.table.is-striped
+      thead
         tr
-          th scope="row"
-            = book.id
-          td 
-            = book.title
-          td 
-            = book.page
-          td.text-right
-            = link_to "Detail", book_path(book), class: "btn btn-success btn-sm"
-            data-content=" "
-            = link_to "Edit", edit_book_path(book), class: "btn btn-info btn-sm"
-            data-content=" "
-            = link_to "Delete", book_path(book), method: :delete, data: {confirm: "Buku '#{book.title}' akan dihapus?"}, class: "btn btn-warning btn-sm"
-  
-  div
-    data-content="Total data: "
-    = @books.size
+          th #
+          th Judul
+          th Halaman
+          th
+      tbody
+        - @books.each do |book|
+          tr
+            th scope="row"
+              = book.id
+            td 
+              = book.title
+            td 
+              = book.page
+            td.text-right
+              = link_to "Detail", book_path(book), class: "button is-small is-info"
+              |  
+              = link_to "Edit", edit_book_path(book), class: "button is-small is-success"
+              |  
+              = link_to "Delete", book_path(book), method: :delete, data: {confirm: "Buku '#{book.title}' akan dihapus?"}, class: "button is-small is-warning"
+    
+    div
+      data-content="Total data: "
+      b = @books.size
 
