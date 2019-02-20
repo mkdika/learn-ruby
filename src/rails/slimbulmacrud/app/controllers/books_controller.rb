@@ -16,6 +16,7 @@ class BooksController < ApplicationController
 
   def create
     @book = Book.new book_params
+    @book.state = 'active'
 
     if @book.save
       redirect_to books_path, notice: "Buku '#{@book.title}' berhasil disimpan."
@@ -44,12 +45,22 @@ class BooksController < ApplicationController
 
     redirect_to books_path, notice: "Buku '#{book.title}' berhasil dihapus."
   end
+  
+  def status
+    if current_book.update(state: params[:state])
+      redirect_to book_path(current_book), notice: "Status buku '#{current_book.title}' berhasil diperbarui"
+    else
+      redirect_to book_path(current_book), notice: "Status buku '#{current_book.title}' gagal diperbarui"
+    end
+  end
+ 
 
   # PRIVATE START HERE
   private
 
   def current_book
-    Book.find params[:id]
+    # short circuit, if current_book is nil then execute the rest of code.
+    @current_book ||= Book.find params[:id]
   end
 
   def book_params

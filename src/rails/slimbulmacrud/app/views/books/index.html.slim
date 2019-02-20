@@ -1,12 +1,12 @@
 section.hero.is-primary.is-small
-  .hero-body
+  .hero-body.is-small
     .container
       h1.title Toko Buku Pakar IT
       hr
       h3.subtitle Daftar buku programming bermutu untuk dipinjam.
 
 .section
-  .container.is-fluid
+  .container
     - if flash[:notice]
       .notification.is-warning
         = flash[:notice]
@@ -16,26 +16,19 @@ section.hero.is-primary.is-small
     table.table.is-striped
       thead
         tr
-          th #
           th Judul
           th Halaman
           th
       tbody
         - @books.each do |book|
           tr
-            th scope="row"
-              = book.id
-            td 
+            td
               = book.title
-            td 
+            td
               = book.page
-            td.text-right
-              = link_to "Detail", book_path(book), class: "button is-small is-info"
-              |  
-              = link_to "Edit", edit_book_path(book), class: "button is-small is-success"
-              |  
-              = link_to "Delete", book_path(book), method: :delete, data: {confirm: "Buku '#{book.title}' akan dihapus?"}, class: "button is-small is-warning"
-    
+            td
+              = link_to "Detail", book_path(book), class: "button is-small is-primary"
+  
     div
       data-content="Total data: "
       b = @books.size

@@ -6,8 +6,14 @@ section.hero.is-primary.is-small
       p Melihat ringkasan data buku yang telah ada.
 
 .section
-  .container.is-fluid
+  .container
+    - if flash[:notice]
+      .notification.is-warning
+        = flash[:notice]
     .content
+      div
+        = link_to "Kembali ke Daftar Buku", books_path, class: "button is-info is-rounded"
+      br
       h2.is-medium
           = @book.title
       div
@@ -17,15 +23,24 @@ section.hero.is-primary.is-small
         data-content.has-text-grey="Tahun Terbit : "
         = @book.year
       div
+        data-content.has-text-grey="Status : "
+        = @book.humanize_state.titlecase
+      div
         data-content.has-text-grey="Deskripsi : "
         br
           = @book.description
       br
       div
+      - if @book.state == 'active'
+        = link_to "Non Aktifkan", status_book_path(@book,state: 'inactive'), method: :patch, class: "button is-success is-rounded"
+      - else
+        = link_to "Aktifkan", status_book_path(@book,state: 'active'), method: :patch, class: "button is-success is-rounded"
+      br
+      br
+      div
         = link_to "Edit Buku", edit_book_path(@book), class: "button is-primary is-rounded"
         data-content=" "
         = link_to "Hapus Buku", book_path(@book), method: :delete, data: {confirm: "Buku '#{@book.title}' akan dihapus?"}, class: "button is-warning is-rounded"
-      br
-      div
-        = link_to "Kembali ke Daftar Buku", books_path, class: "button is-info is-rounded"
+      
+    
 
