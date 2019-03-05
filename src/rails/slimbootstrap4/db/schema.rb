@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_17_065944) do
+ActiveRecord::Schema.define(version: 2019_02_17_130410) do
 
   create_table "books", force: :cascade do |t|
     t.string "title"
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 2019_02_17_065944) do
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "state"
+    t.index ["state"], name: "index_books_on_state"
   end
 
 end

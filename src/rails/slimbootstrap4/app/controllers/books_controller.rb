@@ -16,6 +16,7 @@ class BooksController < ApplicationController
 
   def create
     @book = Book.new book_params
+    @book.state = 'active'
 
     if @book.save
       redirect_to books_path, notice: "Buku '#{@book.title}' berhasil disimpan."
@@ -43,6 +44,12 @@ class BooksController < ApplicationController
     book.destroy
 
     redirect_to books_path, notice: "Buku '#{book.title}' berhasil dihapus."
+  end
+
+  def status
+    if current_book.update(state: params[:state])
+      
+    end
   end
 
   # PRIVATE START HERE
