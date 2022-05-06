@@ -6,7 +6,7 @@ Learning Ruby language and its framework (Revisited).
 
 I am using:
 
-- [Ruby 2.5.1](https://www.ruby-lang.org/end/)
+- [Ruby 2.5.1](https://www.ruby-lang.org/en/)
 - [Ruby on Rails 5.2.1](https://rubyonrails.org/)
 - [Ubuntu 18.04](http://releases.ubuntu.com/18.04/) x64-bit
 
